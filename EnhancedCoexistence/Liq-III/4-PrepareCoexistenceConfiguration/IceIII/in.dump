@@ -1,0 +1,5 @@
+dump            myDump all atom ${out_freq2} dump.water.${pid}
+dump            myDump2 all dcd ${out_freq2} dump.dcd
+dump_modify     myDump append yes
+dump_modify     myDump2 append yes
+

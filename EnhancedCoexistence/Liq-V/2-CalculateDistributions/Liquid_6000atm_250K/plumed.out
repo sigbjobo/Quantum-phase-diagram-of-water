@@ -1,0 +1,90 @@
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.7.0 (git: Unknown) compiled on Dec 29 2020 at 11:29:26
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/plumed
+PLUMED: For installed feature, see /home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/plumed/src/config/config.txt
+PLUMED: Molecular dynamics engine: LAMMPS
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 20
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 864
+PLUMED: File suffix: 
+PLUMED: FILE: plumed.dat
+PLUMED: Action ENVIRONMENTSIMILARITY
+PLUMED:   with label refcv
+PLUMED:   Please read and cite [3]
+PLUMED:   Reference environment 1 : reading 16 reference vectors from env1.pdb 
+PLUMED:   Reference environment 2 : reading 15 reference vectors from env2.pdb 
+PLUMED:   Reference environment 3 : reading 14 reference vectors from env3.pdb 
+PLUMED:   Reference environment 4 : reading 14 reference vectors from env4.pdb 
+PLUMED:   Reference environment 5 : reading 14 reference vectors from env5.pdb 
+PLUMED:   Reference environment 6 : reading 14 reference vectors from env6.pdb 
+PLUMED:   Reference environment 7 : reading 16 reference vectors from env7.pdb 
+PLUMED:   Reference environment 8 : reading 16 reference vectors from env8.pdb 
+PLUMED:   Reference environment 9 : reading 15 reference vectors from env9.pdb 
+PLUMED:   Reference environment 10 : reading 16 reference vectors from env10.pdb 
+PLUMED:   Reference environment 11 : reading 15 reference vectors from env11.pdb 
+PLUMED:   Reference environment 12 : reading 15 reference vectors from env12.pdb 
+PLUMED:   Reference environment 13 : reading 15 reference vectors from env13.pdb 
+PLUMED:   Reference environment 14 : reading 15 reference vectors from env14.pdb 
+PLUMED:   Reference environment 15 : reading 15 reference vectors from env15.pdb 
+PLUMED:   Reference environment 16 : reading 15 reference vectors from env16.pdb 
+PLUMED:   Reference environment 17 : reading 16 reference vectors from env17.pdb 
+PLUMED:   Reference environment 18 : reading 16 reference vectors from env18.pdb 
+PLUMED:   Reference environment 19 : reading 15 reference vectors from env19.pdb 
+PLUMED:   Reference environment 20 : reading 15 reference vectors from env20.pdb 
+PLUMED:   Reference environment 21 : reading 15 reference vectors from env21.pdb 
+PLUMED:   Reference environment 22 : reading 15 reference vectors from env22.pdb 
+PLUMED:   Reference environment 23 : reading 15 reference vectors from env23.pdb 
+PLUMED:   Reference environment 24 : reading 16 reference vectors from env24.pdb 
+PLUMED:   Reference environment 25 : reading 15 reference vectors from env25.pdb 
+PLUMED:   Reference environment 26 : reading 14 reference vectors from env26.pdb 
+PLUMED:   Reference environment 27 : reading 14 reference vectors from env27.pdb 
+PLUMED:   Reference environment 28 : reading 16 reference vectors from env28.pdb 
+PLUMED:   Number of reference environments is 28
+PLUMED:   Number of vectors per reference environment is 16
+PLUMED:   targeting the CUSTOM crystal structure
+PLUMED:   maximum distance in the reference environment is 0.434946
+PLUMED:   representing local density as a sum of Gaussians with standard deviation 0.100000
+PLUMED:   using a soft max function with lambda 100.000000
+PLUMED:   keyword SPECIES takes atoms : 1 4 7 10 13 16 19 22 25 28 31 34 37 40 43 46 49 52 55 58 61 64 67 70 73 76 79 82 85 88 91 94 97 100 103 106 109 112 115 118 121 124 127 130 133 136 139 142 145 148 151 154 157 160 163 166 169 172 175 178 181 184 187 190 193 196 199 202 205 208 211 214 217 220 223 226 229 232 235 238 241 244 247 250 253 256 259 262 265 268 271 274 277 280 283 286 289 292 295 298 301 304 307 310 313 316 319 322 325 328 331 334 337 340 343 346 349 352 355 358 361 364 367 370 373 376 379 382 385 388 391 394 397 400 403 406 409 412 415 418 421 424 427 430 433 436 439 442 445 448 451 454 457 460 463 466 469 472 475 478 481 484 487 490 493 496 499 502 505 508 511 514 517 520 523 526 529 532 535 538 541 544 547 550 553 556 559 562 565 568 571 574 577 580 583 586 589 592 595 598 601 604 607 610 613 616 619 622 625 628 631 634 637 640 643 646 649 652 655 658 661 664 667 670 673 676 679 682 685 688 691 694 697 700 703 706 709 712 715 718 721 724 727 730 733 736 739 742 745 748 751 754 757 760 763 766 769 772 775 778 781 784 787 790 793 796 799 802 805 808 811 814 817 820 823 826 829 832 835 838 841 844 847 850 853 856 859 862 
+PLUMED:   added component to this action:  refcv.mean 
+PLUMED:   value refcv.mean is obtained by taking the 1th component and finding the mean value
+PLUMED:   added component to this action:  refcv.morethan 
+PLUMED:   value refcv.morethan is obtained by taking the 1th component and finding the number of values more than 0.5.  Using rational switching function with parameters d0=0 nn=12 mm=24
+PLUMED: Action HISTOGRAM
+PLUMED:   with label hh
+PLUMED:   with stride 1
+PLUMED:   weights are all equal to one
+PLUMED:   for all base quantities calculated by refcv 
+PLUMED:   grid of 1001 equally spaced points between (-0.5) and (2)
+PLUMED: Action DUMPGRID
+PLUMED:   with label @2
+PLUMED:   with stride 1000000
+PLUMED:   outputting grid calculated by action hh to file named histo with format %f 
+PLUMED:   outputting data for replicas 0 Action PRINT
+PLUMED:   with label @3
+PLUMED:   with stride 500
+PLUMED:   with arguments refcv.mean refcv.morethan
+PLUMED:   on file COLVAR
+PLUMED:   with format  %f
+PLUMED: END FILE: plumed.dat
+PLUMED: Timestep: 0.001000
+PLUMED: KbT has not been set by the MD engine
+PLUMED: It should be set by hand where needed
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED:   [3] Piaggi and Parrinello, J. Chem. Phys. 150 (24), 244119 (2019)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1     8.314208     8.314208     8.314208     8.314208
+PLUMED: 1 Prepare dependencies                           197     0.000186     0.000001     0.000001     0.000004
+PLUMED: 2 Sharing data                                   197     0.041636     0.000211     0.000007     0.019113
+PLUMED: 3 Waiting for data                               197     0.000129     0.000001     0.000000     0.000012
+PLUMED: 4 Calculating (forward loop)                     197     8.148467     0.041363     0.036206     0.109800
+PLUMED: 5 Applying (backward loop)                       197     0.031909     0.000162     0.000006     0.022206
+PLUMED: 6 Update                                         197     0.073515     0.000373     0.000221     0.013497

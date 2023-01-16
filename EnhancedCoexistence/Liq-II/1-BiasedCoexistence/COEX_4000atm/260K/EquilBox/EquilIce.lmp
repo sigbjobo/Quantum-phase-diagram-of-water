@@ -1,0 +1,49 @@
+echo both
+
+include		../in.partitions
+include		../in.temp
+include		../in.pressure
+include		../in.seed
+units           metal
+atom_style	full
+box tilt large
+read_data	../ice.data
+include 	in.setup
+
+include         ../in.dump
+
+log 		log.ice
+fix             2 all nph ${barostat} ${pressure} ${pressure} ${pressureDamp} flip no
+fix             3 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+velocity 	all create ${temperature} ${seed} dist gaussian
+
+
+dump            dumpLiq all dcd ${out_freq2} dump_ice.dcd
+dump            dumpLiq2 all atom ${out_freq2} dump_ice.lammpstrj
+run             ${nsteps_equil_ice} upto
+
+write_data 	ice_final.data
+
+unfix		3
+unfix		2
+
+
+
+# Scale final data file to average value
+
+shell which python3.9
+shell python3.9 ScaleBox.py ice_final.data log.ice ${direction}
+
+
+# Store restart.file
+clear
+units           metal
+atom_style	full
+box tilt large
+read_data	ice_final_scaled.data
+reset_timestep	${nsteps_equil_ice}
+write_restart   restart.lmp.0
+
+
+
+

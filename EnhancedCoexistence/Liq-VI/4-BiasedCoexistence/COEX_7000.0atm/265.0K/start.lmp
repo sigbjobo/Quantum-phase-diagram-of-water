@@ -1,0 +1,41 @@
+echo both
+
+include		in.partitions
+include		in.temp
+include		in.pressure
+include		in.seed
+units           metal
+atom_style	full
+include		in.box
+include 	in.setup
+
+timer           timeout 119:50:00 every 1000
+
+fix             1 all plumed plumedfile plumed.equil.dat outfile plumed.equil.out
+fix             3 all nph x ${pressure} ${pressure} ${pressureDamp}
+fix             4 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+velocity 	all create ${temperature} ${seed} dist gaussian
+
+run             250000 upto
+
+unfix		4
+unfix		3
+unfix		1
+
+reset_timestep	0
+
+include         in.dump
+
+fix             1 all plumed plumedfile plumed.start.dat outfile plumed.out
+fix             3 all nph x ${pressure} ${pressure} ${pressureDamp}
+fix             4 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+
+run             40000000 upto
+
+unfix		4
+unfix		3
+unfix		1
+
+
+write_restart	restart.lmp.${pid}
+write_data	data.final.${pid} nocoeff

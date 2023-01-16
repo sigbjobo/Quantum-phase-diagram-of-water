@@ -1,0 +1,53 @@
+echo both
+
+include		../in.partitions
+include		../in.temp
+include		../in.pressure
+include		../in.seed
+units           metal
+atom_style	full
+
+# Setup connection of ice and liquid
+shell  python3  CombineFiles.py liquid_final.data  ice_final_scaled.data
+
+box tilt large
+read_data        mobile.data  group mobile
+read_data        rigid1.data add merge group rigid1
+read_data        rigid2.data add merge group rigid2
+reset_timestep   ${nsteps_sample_liquid_upto}
+ 
+
+include	         in.setup
+
+# 50 ps to join two simulation boxes
+variable 	 steps equal ${nsteps_coex}
+include         ../in.dump
+variable speed  equal -3/(${steps}*$(dt))
+variable speedx  equal ${speed}*${direction_x_bool}
+variable speedy  equal ${speed}*${direction_y_bool}
+variable speedz  equal ${speed}*${direction_z_bool}
+
+
+fix   1          mobile nve
+fix   2		 mobile temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+fix   4 	 rigid2 move linear ${speedx} ${speedy} ${speedz}
+fix   3	         all deform 1 ${direction} delta 0 -6  remap v 
+
+
+run   		 ${nsteps_coex_upto} upto
+unfix 1
+unfix 2
+unfix 3
+
+
+write_restart	restart.lmp.0
+
+write_data ice_liq_coex.data
+shell python3 Unskew.py
+shell cp ice_liq_coex_unskewed.data ../water.data
+
+
+
+
+
+

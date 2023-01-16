@@ -1,0 +1,10 @@
+echo both
+
+units           metal
+atom_style	full
+read_data	water.data
+
+neigh_modify    delay 7 every 1
+fix 1 all plumed plumedfile plumed.dat outfile plumed.out
+
+rerun dump.water.0 first 200000  every 20000  dump x y z  # stop 2000000 #start  1800000 

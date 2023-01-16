@@ -1,0 +1,256 @@
+LAMMPS (23 Jun 2022)
+include procedure.lmp
+echo both
+include		in.partitions
+variable        pid world 0
+include		in.temp
+variable	temperature equal 260
+variable        tempDamp equal 0.100 # this is 0.1 ps
+include		in.pressure
+variable        pressure equal 6079.5
+variable        pressureDamp equal 1.0 #this is 1ps
+
+variable	barostat string	   tri
+variable	direction string   z
+variable	direction_x_bool equal 0
+variable	direction_y_bool equal 0
+variable	direction_z_bool equal 1
+
+include		in.seed
+variable        seed world 745823
+
+units           metal
+atom_style	full
+box tilt large
+read_restart 	restart.lmp.${pid}
+read_restart 	restart.lmp.0
+Reading restart file ...
+  restart file = 23 Jun 2022, LAMMPS = 23 Jun 2022
+  restoring atom style full from restart
+  triclinic box = (0 0 -0.81965342) to (30.957001 21.340725 31.684817) with tilt (-9.151055 1.0580657 -10.760462)
+WARNING: Triclinic box skew is large (../domain.cpp:224)
+  2 by 1 by 2 MPI processor grid
+Summary of lammps deepmd module ...
+  >>> Info of deepmd-kit:
+  installed to:       /u/sigbjobo/software/DEEPMD_FROM_SOURCE/deepmd-kit/install
+  source:             v2.1.3
+  source branch:       master
+  source commit:      5a32c49
+  source commit at:   2022-07-01 09:52:58 +0800
+  surpport model ver.:1.1 
+  build float prec:   double
+  build with tf inc:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include
+  build with tf lib:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_cc.so;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_framework.so
+  set tf intra_op_parallelism_threads: 0
+  set tf inter_op_parallelism_threads: 0
+  >>> Info of lammps module:
+  use deepmd-kit at:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/deepmd-kit/install
+  source:             v2.1.3
+  source branch:      master
+  source commit:      5a32c49
+  source commit at:   2022-07-01 09:52:58 +0800
+  build float prec:   double
+  build with tf inc:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include
+  build with tf lib:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_cc.so;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_framework.so
+  restoring pair style deepmd from restart
+  2592 atoms
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     0 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     1 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.005 seconds
+include 	in.setup
+variable	out_freq equal 2000
+variable	out_freq2 equal 2000
+
+timestep        0.0005
+
+neigh_modify    delay 7 every 1
+
+include         in.deepmd
+# This is deepMD model
+
+# create groups ###
+#group ox type 2
+#group hy type 1
+
+mass 2 15.999
+mass 1 1.008
+
+pair_style      deepmd ../graph.pb
+pair_coeff      * *
+
+bond_style      none
+angle_style     none
+dihedral_style  none
+improper_style  none
+neigh_modify exclude none
+
+
+neighbor        2.0 bin
+neigh_modify    every 50 delay 0 check no
+
+thermo          ${out_freq}
+thermo          2000
+thermo_style 	custom step temp pe etotal epair emol press lx ly lz vol pxx pyy pzz pxy pxz pyz
+
+restart 	${out_freq} restart.lmp.${pid} restart2.lmp.${pid}
+restart 	2000 restart.lmp.${pid} restart2.lmp.${pid}
+restart 	2000 restart.lmp.0 restart2.lmp.${pid}
+restart 	2000 restart.lmp.0 restart2.lmp.0
+
+
+timer           timeout 23:50:00 every 1000
+New timer settings: style=normal  mode=nosync  timeout=23:50:00
+
+
+# Set number of time steps
+variable 	nsteps_wall		equal	 6000000
+variable 	nsteps_enhanced_coex    equal	20000000
+
+variable     nsteps_enhanced_coex_upto equal (${nsteps_wall}+${nsteps_enhanced_coex})
+variable     nsteps_enhanced_coex_upto equal (6000000+${nsteps_enhanced_coex})
+variable     nsteps_enhanced_coex_upto equal (6000000+20000000)
+
+
+# Set temperature for first step
+if "$(step) < 1  " then    "velocity 	all create ${temperature} ${seed} dist gaussian"
+
+
+# Always run thermo and barostat
+
+
+######################################
+# Run simulation with wall potential #
+######################################
+if " $(step) < ${nsteps_wall} " then    "fix             3 all plumed plumedfile plumed.equil.dat outfile plumed.equil.out"   "fix             1 all nph ${direction} ${pressure} ${pressure} ${pressureDamp}"   "fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}"   "run             ${nsteps_wall} upto"
+if " $(step) == ${nsteps_wall} " then    "unfix 3"   "unfix 1"   "unfix 2"
+
+
+############################
+# Run enhanced coesistence #
+############################
+if "$(step) == ${nsteps_wall}" then    "fix             3 all plumed plumedfile plumed.start.dat outfile plumed.out" else    "fix             3 all plumed plumedfile plumed.dat outfile plumed.out"
+fix             3 all plumed plumedfile plumed.dat outfile plumed.out
+
+if "$(step) < ${nsteps_enhanced_coex_upto} && $(step) >= ${nsteps_wall} " then    "include         in.dump"    "fix             1 all nph ${direction} ${pressure} ${pressure} ${pressureDamp}"   "fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}"   "run             ${nsteps_enhanced_coex_upto} upto"    "unfix 3"   "unfix 1"   "unfix 2"
+include         in.dump
+dump            myDump all atom ${out_freq2} dump.water.${pid}
+dump            myDump all atom 2000 dump.water.${pid}
+dump            myDump all atom 2000 dump.water.0
+dump            myDump2 all dcd ${out_freq2} dump.${pid}.dcd
+dump            myDump2 all dcd 2000 dump.${pid}.dcd
+dump            myDump2 all dcd 2000 dump.0.dcd
+dump_modify     myDump append yes
+dump_modify     myDump2 append yes
+
+fix             1 all nph ${direction} ${pressure} ${pressure} ${pressureDamp}
+fix             1 all nph z ${pressure} ${pressure} ${pressureDamp}
+fix             1 all nph z 6079.5 ${pressure} ${pressureDamp}
+fix             1 all nph z 6079.5 6079.5 ${pressureDamp}
+fix             1 all nph z 6079.5 6079.5 1
+Resetting global fix info from restart file:
+  fix style: nph, fix ID: 1
+fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+fix             2 all temp/csvr 260 ${temperature} ${tempDamp} ${seed}
+fix             2 all temp/csvr 260 260 ${tempDamp} ${seed}
+fix             2 all temp/csvr 260 260 0.1 ${seed}
+fix             2 all temp/csvr 260 260 0.1 745823
+Resetting global fix info from restart file:
+  fix style: temp/csvr, fix ID: 2
+run             ${nsteps_enhanced_coex_upto} upto
+run             26000000 upto
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+
+- USER-DEEPMD package:
+
+@article{Wang_ComputPhysCommun_2018_v228_p178,
+  author = {Wang, Han and Zhang, Linfeng and Han, Jiequn and E, Weinan},
+  doi = {10.1016/j.cpc.2018.03.016},
+  url = {https://doi.org/10.1016/j.cpc.2018.03.016},
+  year = 2018,
+  month = {jul},
+  publisher = {Elsevier {BV}},
+  volume = 228,
+  journal = {Comput. Phys. Commun.},
+  title = {{DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics}},
+  pages = {178--184}
+}
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+All restart file global fix info was re-assigned
+Neighbor list info ...
+  update every 50 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 11 9 9
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair deepmd, perpetual
+      attributes: full, newton on
+      pair build: full/bin
+      stencil: full/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 7.313 | 7.313 | 7.314 Mbytes
+   Step          Temp          PotEng         TotEng         E_pair         E_mol          Press            Lx             Ly             Lz           Volume          Pxx            Pyy            Pzz            Pxy            Pxz            Pyz      
+  25988000   254.91398     -419.40381     -334.02979     -419.40381      0              5210.0599      30.957001      21.340725      32.504471      21473.911      5142.1057      4990.2041      5497.8698     -2010.9127      886.01718     -1873.9645    
+  25990000   257.36188     -419.57666     -333.38281     -419.57666      0              5157.6826      30.957001      21.340725      32.662409      21578.252      4633.1431      6394.1627      4445.742       2137.7206     -259.21708      1511.1906    
+  25992000   260.21778     -417.46584     -330.31551     -417.46584      0              4656.1909      30.957001      21.340725      32.510975      21478.208      6133.8785      4191.6217      3643.0726      763.66401      580.23133      564.04145    
+  25994000   263.08022     -418.29058     -330.18159     -418.29058      0              3929.9085      30.957001      21.340725      32.487569      21462.745      3347.8006      3383.9515      5057.9734     -1763.4962      554.79691      156.79977    
+  25996000   260.73356     -421.26975     -333.94668     -421.26975      0              7283.3107      30.957001      21.340725      32.337695      21363.731      5759.1818      7130.6691      8960.0811      905.21641     -1346.3574     -906.48735    
+  25998000   265.34938     -416.7605      -327.89153     -416.7605       0              6448.5475      30.957001      21.340725      32.443204      21433.436      6840.6598      5608.8835      6896.0991     -1011.0745     -544.95532     -1368.0222    
+  26000000   256.22027     -420.14485     -334.33334     -420.14485      0              5659.6058      30.957001      21.340725      32.407472      21409.829      2987.569       5650.7513      8340.4971     -522.18998     -487.85464     -267.7567     
+Loop time of 136.238 on 4 procs for 12000 steps with 2592 atoms
+
+Performance: 3.805 ns/day, 6.307 hours/ns, 88.081 timesteps/s
+1479.1% CPU use with 4 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 34.134     | 34.224     | 34.394     |   1.7 | 25.12
+Bond    | 0.0011224  | 0.0012277  | 0.0013205  |   0.2 |  0.00
+Neigh   | 1.0135     | 1.0246     | 1.0403     |   1.1 |  0.75
+Comm    | 4.093      | 4.2482     | 4.317      |   4.4 |  3.12
+Output  | 7.2932     | 7.2933     | 7.2933     |   0.0 |  5.35
+Modify  | 89.41      | 89.414     | 89.419     |   0.0 | 65.63
+Other   |            | 0.03291    |            |       |  0.02
+
+Nlocal:            648 ave         658 max         640 min
+Histogram: 1 0 0 2 0 0 0 0 0 1
+Nghost:           4258 ave        4264 max        4245 min
+Histogram: 1 0 0 0 0 0 0 1 0 2
+Neighs:              0 ave           0 max           0 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+FullNghs:       167864 ave      169708 max      165591 min
+Histogram: 1 0 0 0 1 0 0 1 0 1
+
+Total # of neighbors = 671458
+Ave neighs/atom = 259.05015
+Ave special neighs/atom = 0
+Neighbor list builds = 240
+Dangerous builds not checked
+unfix 3
+unfix 1
+unfix 2
+
+
+# Finalize simulation
+write_restart	restart.lmp.${pid}
+write_restart	restart.lmp.0
+System init for write_restart ...
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+write_data	data.final.${pid} nocoeff
+write_data	data.final.0 nocoeff
+System init for write_data ...
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+Total wall time: 0:02:22

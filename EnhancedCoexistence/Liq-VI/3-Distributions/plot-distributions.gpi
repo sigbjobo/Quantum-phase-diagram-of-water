@@ -1,0 +1,5 @@
+set xr [0.3:1.1]
+pl "Liquid/histo" u 1:2 w l
+repl "IceVI/histo" u 1:2 w l
+
+pause -1

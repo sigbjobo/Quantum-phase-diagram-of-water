@@ -1,0 +1,10 @@
+# vim:ft=plumed
+
+INCLUDE FILE=plumed.order.dat
+
+uwall: UPPER_WALLS ARG=refcv.morethan-1 AT=710. KAPPA=1.0 EXP=2 STRIDE=2
+lwall: LOWER_WALLS ARG=refcv.morethan-1 AT=650. KAPPA=1.0 EXP=2 STRIDE=2
+
+
+
+PRINT STRIDE=500  ARG=* FILE=COLVAR-EQUIL

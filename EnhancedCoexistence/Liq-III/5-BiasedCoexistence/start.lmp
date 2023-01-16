@@ -1,0 +1,49 @@
+echo both
+
+include		in.partitions
+include		in.temp
+include		in.pressure
+include		in.seed
+units           metal
+atom_style	full
+read_restart 	restart.lmp.0
+include 	in.setup
+
+
+
+timer           timeout 23:50:00 every 1000
+
+
+# Equilibrate to specified number of ice
+# reset_timestep 0
+# log log.wall.${pid} 
+# fix             1 all plumed plumedfile plumed.equil.dat outfile plumed.out
+# fix             3 all nph x ${pressure} ${pressure} ${pressureDamp}
+# fix             4 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+# velocity 	all create ${temperature} ${seed} dist gaussian
+# run 10000000 
+
+
+# Production run
+reset_timestep 0
+include in.dump
+log log.lammps.${pid} append
+ 
+
+unfix		4
+unfix		3
+unfix		1
+
+
+fix             1 all plumed plumedfile plumed.start.dat outfile plumed.out
+fix             3 all nph x ${pressure} ${pressure} ${pressureDamp}
+fix             4 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+
+run             40000000 upto
+
+unfix		4
+unfix		3
+unfix		1
+
+write_data	data.final.${pid}
+write_restart	restart.lmp.${pid}

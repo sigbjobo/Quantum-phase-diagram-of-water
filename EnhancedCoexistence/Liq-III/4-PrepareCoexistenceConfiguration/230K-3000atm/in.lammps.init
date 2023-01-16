@@ -1,0 +1,110 @@
+# bulk water
+
+timer 		timeout 47:30:00 every 50000
+
+units           metal
+boundary        p p p
+atom_style      atomic
+
+neighbor        2.0 bin
+neigh_modify    every 10 delay 0 check no
+
+read_data	iceXIII-1.data
+#read_data	water.192.data
+
+mass 		1 16
+mass		2 2
+
+pair_style	deepmd graph.pb 
+pair_coeff	
+
+variable        pressure equal 2500.0
+variable        pressureDamp1 equal 10.0 # This is 10 ps
+variable        pressureDamp2 equal 1.0 # This is 1 ps
+variable        temperature equal 260.0
+variable	melttemp equal 450.0
+variable        tempDamp equal 0.1
+variable	seed1 world 91861
+variable	seed2 world 21811
+variable	seed3 world 12572
+variable	seed4 world 28963
+variable	seed5 world 95751
+variable	seed6 world 22751
+variable	seed7 world 91111
+variable	seed8 world 85711
+
+timestep        0.0005
+thermo_style    custom step pe ke etotal temp pxx pyy pzz pxy pxz pyz press lx ly lz xy xz yz vol
+thermo          1000
+fix 		thermo_print all print 1000 "$(step) $(pe) $(ke) $(etotal) $(temp) $(pxx) $(pyy) $(pzz) $(pxy) $(pxz) $(pyz) $(press) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz) $(vol)" append thermo.out screen no title "#step pe ke etotal temp pxx pyy pzz pxy pxz pyz press lx ly lz xy xz yz vol"
+dump		1 all custom 1000 water.dump id type x y z 
+dump_modify	1 sort id append yes
+
+# equilibrate ice configuration to desired pressure
+fix             1 all nph tri ${pressure} ${pressure} ${pressureDamp1} drag 1.0
+fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed1}
+fix		3 all momentum 100 linear 1 1 1 rescale
+
+write_data      water.data.init
+velocity        all create ${temperature} ${seed2}
+
+run             1000000
+
+replicate	1 2 1
+
+write_restart   restart.iceequil
+write_data   	water.data.icequil
+
+# create group to melt
+variable	meltPt equal (ylo)+(ly)/2.0
+region		meltReg plane 0 ${meltPt} 0 0 -1 0 units box
+group		allH type 2
+group		halfBox region meltReg
+group		tstatGrp union allH halfBox
+
+# melt half the box in NPT
+unfix		1
+unfix		2
+fix             1 tstatGrp nph y ${pressure} ${pressure} ${pressureDamp2} dilate tstatGrp
+fix		2 tstatGrp temp/csvr ${temperature} ${melttemp} ${tempDamp} ${seed3}
+
+run             25000
+write_restart   restart.melted
+write_data   	water.data.melted
+
+unfix 		2
+fix		2 tstatGrp temp/csvr ${melttemp} ${melttemp} ${tempDamp} ${seed4}
+
+run             1000000
+write_restart   restart.melted
+write_data   	water.data.melted
+
+unfix 		2
+fix		2 tstatGrp temp/csvr ${melttemp} ${temperature} ${tempDamp} ${seed5}
+
+run             25000
+write_restart   restart.melted
+write_data   	water.data.melted
+
+# equilibrate pressure of liquid half (y-direction only)
+unfix		2
+fix             2 tstatGrp temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed6}
+
+run             1000000
+write_restart   restart.liq
+write_data   	water.data.liq
+
+# enable motion of ice oxygens
+unfix		1
+unfix		2
+fix             1 all nph y ${pressure} ${pressure} ${pressureDamp2}
+fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed7}
+velocity        all create ${temperature} ${seed8}
+
+run             1000000
+
+reset_timestep	0
+write_restart   restart.inter
+write_data   	water.data.inter
+
+print $(step) file Equildone.txt

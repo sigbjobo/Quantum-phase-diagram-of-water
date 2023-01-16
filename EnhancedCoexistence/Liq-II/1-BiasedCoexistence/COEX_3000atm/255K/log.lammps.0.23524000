@@ -1,0 +1,260 @@
+LAMMPS (23 Jun 2022)
+include procedure.lmp
+echo both
+include		in.partitions
+variable        pid world 0
+include		in.temp
+variable	temperature equal 255
+variable        tempDamp equal 0.100 # this is 0.1 ps
+include		in.pressure
+variable        pressure equal 3039.75
+variable        pressureDamp equal 1.0 #this is 1ps
+
+variable	barostat string	   tri
+variable	direction string   z
+variable	direction_x_bool equal 0
+variable	direction_y_bool equal 0
+variable	direction_z_bool equal 1
+
+include		in.seed
+variable        seed world 745823
+
+units           metal
+atom_style	full
+box tilt large
+read_restart 	restart.lmp.${pid}
+read_restart 	restart.lmp.0
+Reading restart file ...
+  restart file = 23 Jun 2022, LAMMPS = 23 Jun 2022
+  restoring atom style full from restart
+  triclinic box = (0 0 -0.72133477) to (31.157 21.485012 32.477503) with tilt (-9.195174 0.7644087 -11.184998)
+WARNING: Triclinic box skew is large (../domain.cpp:224)
+  2 by 1 by 2 MPI processor grid
+Summary of lammps deepmd module ...
+  >>> Info of deepmd-kit:
+  installed to:       /u/sigbjobo/software/DEEPMD_FROM_SOURCE/deepmd-kit/install
+  source:             v2.1.3
+  source branch:       master
+  source commit:      5a32c49
+  source commit at:   2022-07-01 09:52:58 +0800
+  surpport model ver.:1.1 
+  build float prec:   double
+  build with tf inc:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include
+  build with tf lib:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_cc.so;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_framework.so
+  set tf intra_op_parallelism_threads: 0
+  set tf inter_op_parallelism_threads: 0
+  >>> Info of lammps module:
+  use deepmd-kit at:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/deepmd-kit/install
+  source:             v2.1.3
+  source branch:      master
+  source commit:      5a32c49
+  source commit at:   2022-07-01 09:52:58 +0800
+  build float prec:   double
+  build with tf inc:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/include
+  build with tf lib:  /u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_cc.so;/u/sigbjobo/software/DEEPMD_FROM_SOURCE/tensorflow/install/lib/libtensorflow_framework.so
+  restoring pair style deepmd from restart
+  2592 atoms
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     0 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     1 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.006 seconds
+include 	in.setup
+variable	out_freq equal 2000
+variable	out_freq2 equal 2000
+
+timestep        0.0005
+
+neigh_modify    delay 7 every 1
+
+include         in.deepmd
+# This is deepMD model
+
+# create groups ###
+#group ox type 2
+#group hy type 1
+
+mass 2 15.999
+mass 1 1.008
+
+pair_style      deepmd ../graph.pb
+pair_coeff      * *
+
+bond_style      none
+angle_style     none
+dihedral_style  none
+improper_style  none
+neigh_modify exclude none
+
+
+neighbor        2.0 bin
+neigh_modify    every 50 delay 0 check no
+
+thermo          ${out_freq}
+thermo          2000
+thermo_style 	custom step temp pe etotal epair emol press lx ly lz vol pxx pyy pzz pxy pxz pyz
+
+restart 	${out_freq} restart.lmp.${pid} restart2.lmp.${pid}
+restart 	2000 restart.lmp.${pid} restart2.lmp.${pid}
+restart 	2000 restart.lmp.0 restart2.lmp.${pid}
+restart 	2000 restart.lmp.0 restart2.lmp.0
+
+
+timer           timeout 23:50:00 every 1000
+New timer settings: style=normal  mode=nosync  timeout=23:50:00
+
+
+# Set number of time steps
+variable 	nsteps_wall		equal	 6000000
+variable 	nsteps_enhanced_coex    equal	20000000
+
+variable     nsteps_enhanced_coex_upto equal (${nsteps_wall}+${nsteps_enhanced_coex})
+variable     nsteps_enhanced_coex_upto equal (6000000+${nsteps_enhanced_coex})
+variable     nsteps_enhanced_coex_upto equal (6000000+20000000)
+
+
+# Set temperature for first step
+if "$(step) < 1  " then    "velocity 	all create ${temperature} ${seed} dist gaussian"
+
+
+# Always run thermo and barostat
+
+
+######################################
+# Run simulation with wall potential #
+######################################
+if " $(step) < ${nsteps_wall} " then    "fix             3 all plumed plumedfile plumed.equil.dat outfile plumed.equil.out"   "fix             1 all nph ${direction} ${pressure} ${pressure} ${pressureDamp}"   "fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}"   "run             ${nsteps_wall} upto"
+if " $(step) == ${nsteps_wall} " then    "unfix 3"   "unfix 1"   "unfix 2"
+
+
+############################
+# Run enhanced coesistence #
+############################
+if "$(step) == ${nsteps_wall}" then    "fix             3 all plumed plumedfile plumed.start.dat outfile plumed.out" else    "fix             3 all plumed plumedfile plumed.dat outfile plumed.out"
+fix             3 all plumed plumedfile plumed.dat outfile plumed.out
+
+if "$(step) < ${nsteps_enhanced_coex_upto} && $(step) >= ${nsteps_wall} " then    "include         in.dump"    "fix             1 all nph ${direction} ${pressure} ${pressure} ${pressureDamp}"   "fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}"   "run             ${nsteps_enhanced_coex_upto} upto"    "unfix 3"   "unfix 1"   "unfix 2"
+include         in.dump
+dump            myDump all atom ${out_freq2} dump.water.${pid}
+dump            myDump all atom 2000 dump.water.${pid}
+dump            myDump all atom 2000 dump.water.0
+dump            myDump2 all dcd ${out_freq2} dump.${pid}.dcd
+dump            myDump2 all dcd 2000 dump.${pid}.dcd
+dump            myDump2 all dcd 2000 dump.0.dcd
+dump_modify     myDump append yes
+dump_modify     myDump2 append yes
+
+fix             1 all nph ${direction} ${pressure} ${pressure} ${pressureDamp}
+fix             1 all nph z ${pressure} ${pressure} ${pressureDamp}
+fix             1 all nph z 3039.75 ${pressure} ${pressureDamp}
+fix             1 all nph z 3039.75 3039.75 ${pressureDamp}
+fix             1 all nph z 3039.75 3039.75 1
+Resetting global fix info from restart file:
+  fix style: nph, fix ID: 1
+fix             2 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+fix             2 all temp/csvr 255 ${temperature} ${tempDamp} ${seed}
+fix             2 all temp/csvr 255 255 ${tempDamp} ${seed}
+fix             2 all temp/csvr 255 255 0.1 ${seed}
+fix             2 all temp/csvr 255 255 0.1 745823
+Resetting global fix info from restart file:
+  fix style: temp/csvr, fix ID: 2
+run             ${nsteps_enhanced_coex_upto} upto
+run             26000000 upto
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+
+- USER-DEEPMD package:
+
+@article{Wang_ComputPhysCommun_2018_v228_p178,
+  author = {Wang, Han and Zhang, Linfeng and Han, Jiequn and E, Weinan},
+  doi = {10.1016/j.cpc.2018.03.016},
+  url = {https://doi.org/10.1016/j.cpc.2018.03.016},
+  year = 2018,
+  month = {jul},
+  publisher = {Elsevier {BV}},
+  volume = 228,
+  journal = {Comput. Phys. Commun.},
+  title = {{DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics}},
+  pages = {178--184}
+}
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+All restart file global fix info was re-assigned
+Neighbor list info ...
+  update every 50 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 11 9 9
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair deepmd, perpetual
+      attributes: full, newton on
+      pair build: full/bin
+      stencil: full/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 7.303 | 7.304 | 7.305 Mbytes
+   Step          Temp          PotEng         TotEng         E_pair         E_mol          Press            Lx             Ly             Lz           Volume          Pxx            Pyy            Pzz            Pxy            Pxz            Pyz      
+  23416000   254.51227     -410.14708     -324.9076      -410.14708      0              4262.7278      31.157         21.485012      33.198838      22223.585      4372.5455      3793.9785      4621.6594     -544.6034      -2358.4406      1333.9854    
+  23418000   253.25275     -409.69154     -324.87389     -409.69154      0              2874.2759      31.157         21.485012      33.33918       22317.531      2340.7863      997.88663      5284.1549     -2.0031927      322.86692     -328.57758    
+  23420000   254.60511     -411.6842      -326.41362     -411.6842       0              2686.6435      31.157         21.485012      33.44334       22387.257      1091.6454      2775.2137      4193.0713     -551.05883      460.5217      -342.14097    
+  23422000   253.13778     -408.77903     -323.99989     -408.77903      0              2104.0195      31.157         21.485012      33.555904      22462.608      835.19204      1848.7663      3628.1002     -604.76039      480.19239     -1102.1157    
+  23424000   248.52676     -413.2843      -330.04945     -413.2843       0              3212.2852      31.157         21.485012      33.642671      22520.691      2321.8473      2656.5409      4658.4673      1068.7237     -71.759959     -297.23909    
+  23426000   250.75511     -409.55783     -325.57667     -409.55783      0              1892.6431      31.157         21.485012      33.670507      22539.324      2578.4439      1244.6973      1854.7881      521.5282      -1498.7403      1708.8018    
+  23428000   258.04803     -409.67819     -323.25454     -409.67819      0              629.88504      31.157         21.485012      33.70691       22563.693     -403.52265      758.00588      1535.1719      410.51813      1587.7229     -759.02528    
+  23430000   251.60517     -412.3239      -328.05805     -412.3239       0              3529.7492      31.157         21.485012      33.547592      22457.044      4885.641       2986.1499      2717.4568      1345.8258      187.43419      1562.8473    
+  23432000   250.43961     -411.56032     -327.68483     -411.56032      0              2344.3146      31.157         21.485012      33.653198      22527.738      1175.7043      2653.9559      3203.2835      880.89384      210.62629      1007.7932    
+  23434000   255.675       -409.26391     -323.63502     -409.26391      0              3217.1512      31.157         21.485012      33.625083      22508.917      3483.325       2721.3052      3446.8234      908.46311     -74.755714     -227.53007    
+  23436000   252.91155     -410.95118     -326.2478      -410.95118      0              2411.9921      31.157         21.485012      33.562692      22467.152      3597.7212      1141.3542      2496.9011      852.49466     -946.36018      1628.8335    
+  23438000   255.41136     -412.26513     -326.72454     -412.26513      0              2686.2199      31.157         21.485012      33.511271      22432.73       1711.2101      1864.4567      4482.993       1830.828       714.74375      32.530891    
+  23440000   250.45859     -411.65041     -327.76857     -411.65041      0              2089.7684      31.157         21.485012      33.519668      22438.352      1483.2218      21.007429      4765.076      -349.03064     -403.02656      151.19437    
+  23442000   250.32527     -408.82533     -324.98813     -408.82533      0              3243.747       31.157         21.485012      33.549284      22458.177      3214.1894      3920.0495      2597.0022     -789.94945      1222.3122      768.61676    
+  23444000   262.76527     -414.0209      -326.01739     -414.0209       0              2923.2986      31.157         21.485012      33.811753      22633.875      5286.3746      1561.1843      1922.3368     -334.19619      95.115767     -976.15989    
+  23446000   255.6112      -414.19327     -328.58575     -414.19327      0              2945.2093      31.157         21.485012      33.693242      22554.543      1651.8984      4403.7127      2780.0169     -1721.6815      1167.0749     -222.69265    
+  23448000   251.94006     -412.37304     -327.99503     -412.37304      0              3592.5764      31.157         21.485012      33.757375      22597.475      3585.9717      3274.8029      3916.9547      1053.0148      279.05687      724.72563    
+  23450000   253.56472     -414.53983     -329.6177      -414.53983      0              2921.5074      31.157         21.485012      33.660283      22532.48       4170.1763      2649.8172      1944.5287      421.09199     -328.98011      1288.2517    
+  23452000   257.5552      -413.70085     -327.44226     -413.70085      0              1926.0224      31.157         21.485012      33.776759      22610.45       1812.3134      1756.1271      2209.6266     -561.40346      425.19232     -299.56917    
+  23454000   249.62355     -410.90794     -327.30576     -410.90794      0              2403.0143      31.157         21.485012      33.735403      22582.766      3301.2231      599.29442      3308.5254     -909.48554      837.35266     -545.54668    
+  23456000   257.60088     -411.40995     -325.13605     -411.40995      0              3014.835       31.157         21.485012      33.740244      22586.007      2218.1392      2882.848       3943.5178      470.29109     -477.412        509.99838    
+  23458000   257.18566     -410.57122     -324.43639     -410.57122      0              2567.352       31.157         21.485012      33.664112      22535.043      2611.3396      799.63869      4291.0776     -445.33952      1056.8481      871.36407    
+  23460000   255.71756     -408.93154     -323.2884      -408.93154      0              341.4035       31.157         21.485012      33.595119      22488.859      1543.173      -1183.9533      664.99074      491.21458     -1146.6891      907.69974    
+  23462000   256.15532     -410.36463     -324.57487     -410.36463      0              2324.3893      31.157         21.485012      33.68986       22552.279      1639.7682      4683.2841      650.11567      701.13578      233.41313     -1406.1123    
+  23464000   247.56114     -411.11902     -328.20756     -411.11902      0              2315.61        31.157         21.485012      33.552757      22460.502      1645.3705      2238.3435      3063.116       1303.9504      460.54085      1143.2056    
+  23466000   259.29524     -408.87356     -322.0322      -408.87356      0              2026.7999      31.157         21.485012      33.491007      22419.165      3258.1362      644.85321      2177.4103     -783.91691      39.405738      388.28719    
+  23468000   254.6908      -408.78777     -323.4885      -408.78777      0              3935.7563      31.157         21.485012      33.590343      22485.662      2806.6907      4037.5882      4962.9898      943.53267      1119.0385     -144.53328    
+  23470000   256.34861     -409.16654     -323.31205     -409.16654      0              2371.3124      31.157         21.485012      33.484098      22414.541      1499.563       706.56813      4907.806      -477.18459     -1218.7769      1436.8163    
+  23472000   250.40006     -410.98568     -327.12343     -410.98568      0              2111.7454      31.157         21.485012      33.488241      22417.314      3288.3188      3973.7867     -926.86937     -1270.8617     -175.69649      286.8514     
+  23474000   250.18288     -408.62228     -324.83277     -408.62228      0              3874.3886      31.157         21.485012      33.403349      22360.486      3589.7969      4173.4973      3859.8715     -712.87856     -311.30536      1561.6719    
+  23476000   254.55006     -410.21336     -324.96123     -410.21336      0              2216.7632      31.157         21.485012      33.651005      22526.269      2386.1368      1867.0419      2397.1109      535.02047      1248.7917      419.95789    
+  23478000   254.38146     -409.05246     -323.85679     -409.05246      0              3192.4833      31.157         21.485012      33.501675      22426.307      3168.875       3229.421       3179.154       43.032593     -703.32562     -903.39577    
+  23480000   257.06699     -410.67864     -324.58355     -410.67864      0              3739.3189      31.157         21.485012      33.265672      22268.324      2696.6911      4663.3568      3857.9089     -1655.6409     -793.61445     -137.903      
+  23482000   256.81767     -409.87666     -323.86507     -409.87666      0              3786.7108      31.157         21.485012      33.341967      22319.397      8028.6104      2481.051       850.47095     -1164.8989     -136.06259     -48.142418    
+  23484000   257.5868      -411.08526     -324.81609     -411.08526      0              3034.1908      31.157         21.485012      33.514216      22434.702      2855.199       4454.9831      1792.3903      535.94531     -240.48144      257.64369    
+  23486000   251.24785     -411.17533     -327.02915     -411.17533      0              3183.1371      31.157         21.485012      33.705719      22562.895      2344.8478      1418.1484      5786.415       427.30448     -1027.6859      2499.1197    
+  23488000   253.80435     -412.81346     -327.81107     -412.81346      0              3705.9213      31.157         21.485012      33.580193      22478.867      3765.6463      3433.3747      3918.7429      1420.1291     -1298.1986      790.24691    
+  23490000   247.60005     -410.32391     -327.39943     -410.32391      0              2687.3078      31.157         21.485012      33.679464      22545.32       1655.4015      3972.5377      2433.9843      242.84876      144.64553     -844.00725    
+  23492000   250.81653     -410.91186     -326.91014     -410.91186      0              2583.7438      31.157         21.485012      33.528025      22443.946      1365.9148      2625.4726      3759.8439      1265.2535     -1507.6947      1653.5832    
+  23494000   257.54747     -412.23995     -325.98394     -412.23995      0              1951.0769      31.157         21.485012      33.535849      22449.183      2268.3531      1058.1509      2526.7268      88.219396      62.499602      252.44968    
+  23496000   257.09845     -410.20419     -324.09857     -410.20419      0              4219.8207      31.157         21.485012      33.506615      22429.614      4420.25        4813.9843      3425.2279      1464.15       -459.43814     -449.901      
+  23498000   252.1936      -411.16721     -326.70428     -411.16721      0              3071.4658      31.157         21.485012      33.326536      22309.067      255.31566      4115.0183      4844.0634      621.02339     -475.17605      1114.832     
+  23500000   256.10827     -411.67706     -325.90306     -411.67706      0              1821.8696      31.157         21.485012      33.477607      22410.195      1534.5189      869.75282      3061.3371      400.57042      1115.561      -156.71814    
+  23502000   254.33864     -411.16189     -325.98057     -411.16189      0              3930.4187      31.157         21.485012      33.281762      22279.095      3608.9374      4059.4671      4122.8517      297.5751      -378.30539      584.25045    
+  23504000   256.4645      -413.83237     -327.93907     -413.83237      0              4507.7443      31.157         21.485012      33.299447      22290.933      4060.4387      4397.7522      5065.0421     -84.099771     -2185.4974     -259.43973    
+  23506000   255.17472     -410.22643     -324.76509     -410.22643      0              2110.8501      31.157         21.485012      33.438209      22383.822      93.276551      2223.8566      4015.4171      2467.5922     -701.12951      389.52346    
+  23508000   253.68367     -409.37989     -324.41792     -409.37989      0              1468.6242      31.157         21.485012      33.459434      22398.03      -440.95139      1963.0633      2883.7607     -1191.7875      545.02617     -1153.0573    
+  23510000   248.13045     -411.05826     -327.95614     -411.05826      0              1919.8423      31.157         21.485012      33.550733      22459.147     -20.033293      3547.0262      2232.5339      542.06591      82.051658     -680.8078     
+  23512000   255.1971      -408.58068     -323.11184     -408.58068      0              3975.3535      31.157         21.485012      33.801848      22627.245      4232.9725      2473.7954      5219.2925      468.06492      681.01495     -25.860491    
+  23514000   253.27693     -411.3327      -326.50696     -411.3327       0              2029.4369      31.157         21.485012      33.747019      22590.542      2014.0239      2879.4167      1194.8703      27.131512     -342.76402     -71.374821    
+  23516000   253.13238     -407.12289     -322.34555     -407.12289      0              3110.3146      31.157         21.485012      33.752698      22594.344      3357.5653      3152.4366      2820.942       230.76063      180.16743      465.42277    
+  23518000   256.32532     -414.24887     -328.40218     -414.24887      0              2392.7988      31.157         21.485012      33.475063      22408.492      3581.4277      228.91554      3368.0532      596.52424     -132.49418      597.94524    
+  23520000   260.994       -411.02531     -323.61502     -411.02531      0              3161.7686      31.157         21.485012      33.568541      22471.067      1688.5323      3531.6592      4265.1145      1119.1521      183.79836     -274.2642     
+  23522000   252.43911     -409.484       -324.93885     -409.484        0              2760.7933      31.157         21.485012      33.566991      22470.03       1652.2168      2147.722       4482.4412      488.95406      880.3575      -1200.8717    
+ERROR on proc 0: Cannot open restart file restart2.lmp.0: Permission denied (../write_restart.cpp:233)
+Last command: run             ${nsteps_enhanced_coex_upto} upto

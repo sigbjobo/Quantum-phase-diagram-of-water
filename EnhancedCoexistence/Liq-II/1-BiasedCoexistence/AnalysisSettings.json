@@ -1,0 +1,11 @@
+{
+    "singlePressure": "3000atm",
+    "singleTemperature": "260.0K",
+    "n_temps": 5,
+    "n_press": 1,
+    "nmpi": 1,
+    "fig1_size": [12,7.5],
+    "fig2_size": [7.2,5.5],
+    "IGNORE": [],
+    "plotRef": [["Exp","../../ReferenceData/exp_pd.dat",9.86923]]
+}

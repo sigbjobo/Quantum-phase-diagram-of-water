@@ -1,0 +1,4 @@
+LAMMPS (23 Jun 2022)
+if "[ -e DELTAFS ] "      echo Hallo
+ERROR: Invalid Boolean syntax in if command (../variable.cpp:4843)
+Last command: [ -e DELTAFS ] 

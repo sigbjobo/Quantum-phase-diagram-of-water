@@ -1,0 +1,422 @@
+[I 06:00:51.293 NotebookApp] The port 8888 is already in use, trying another port.
+[I 06:00:51.293 NotebookApp] The port 8889 is already in use, trying another port.
+[I 06:00:51.293 NotebookApp] The port 8890 is already in use, trying another port.
+[I 06:00:51.294 NotebookApp] The port 8891 is already in use, trying another port.
+[I 06:00:51.294 NotebookApp] The port 8892 is already in use, trying another port.
+[I 06:00:51.294 NotebookApp] Serving notebooks from local directory: /Users/sigbjobo/research/clusters/expanse/research_storage/ice_liquid_interface/TIP4P_ICE/IceIII_Liquid/3-Distributions
+[I 06:00:51.294 NotebookApp] Jupyter Notebook 6.4.4 is running at:
+[I 06:00:51.294 NotebookApp] http://localhost:8897/?token=f142d0016a9fdb12357fec555b6b69e73e86a73127928eb4
+[I 06:00:51.294 NotebookApp]  or http://127.0.0.1:8897/?token=f142d0016a9fdb12357fec555b6b69e73e86a73127928eb4
+[I 06:00:51.294 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 06:00:51.297 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/sigbjobo/Library/Jupyter/runtime/nbserver-40203-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8897/?token=f142d0016a9fdb12357fec555b6b69e73e86a73127928eb4
+     or http://127.0.0.1:8897/?token=f142d0016a9fdb12357fec555b6b69e73e86a73127928eb4
+[W 06:00:58.104 NotebookApp] Notebook Distribution.ipynb is not trusted
+/Users/sigbjobo/miniforge3/lib/python3.9/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x108107220>(<Future finis...2f8"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x108107220>(<Future finis...2f8"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "/Users/sigbjobo/miniforge3/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-5' coro=<HTTP1ServerConnection._server_request_loop() running at /Users/sigbjobo/miniforge3/lib/python3.9/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'GET /api/co...c2f8"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /Users/sigbjobo/miniforge3/lib/python3.9/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-1' coro=<MultiKernelManager._async_start_kernel() running at /Users/sigbjobo/miniforge3/lib/python3.9/site-packages/jupyter_client/multikernelmanager.py:186>> is being executed.
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x108454490>(<Future finis...2f8"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x108454490>(<Future finis...2f8"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "/Users/sigbjobo/miniforge3/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-6' coro=<HTTP1ServerConnection._server_request_loop() running at /Users/sigbjobo/miniforge3/lib/python3.9/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'GET /kernel...c2f8"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /Users/sigbjobo/miniforge3/lib/python3.9/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-2' coro=<KernelManager._async_start_kernel() running at /Users/sigbjobo/miniforge3/lib/python3.9/site-packages/jupyter_client/manager.py:337>> is being executed.
+[I 06:00:58.317 NotebookApp] Kernel started: dd18e64b-0f4e-4fc3-aaea-a17c0e626839, name: python3
+/Users/sigbjobo/miniforge3/lib/python3.9/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 06:02:58.879 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:10:58.431 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:18:58.417 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:22:58.318 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:24:58.315 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:26:58.316 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:28:58.320 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:30:58.286 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:32:58.399 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:34:58.403 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:36:58.897 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:40:58.296 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:42:58.270 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:44:58.268 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:46:58.273 NotebookApp] Saving file at /Distribution.ipynb
+[I 06:59:25.064 NotebookApp] Starting buffering for dd18e64b-0f4e-4fc3-aaea-a17c0e626839:ad548b6d5827435b8f7213cb74f0f7be
+/home/sbore/projects/DeepMDPhaseDiagram/4-PhaseDiagram/IceIII-Liquid/3-Distributions
+hopper.pl.ucsd.edu
+Tue May 31 10:24:17 PDT 2022
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 5, in <module>
+    print(np.trapz(np.minimum(data1[:,1],data2[:,1]),x=data1[:,0]))
+ValueError: operands could not be broadcast together with shapes (2002) (1001) 
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory

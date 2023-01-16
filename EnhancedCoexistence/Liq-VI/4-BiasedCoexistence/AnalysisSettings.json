@@ -1,0 +1,11 @@
+{
+    "singlePressure": "7000.0atm",
+    "singleTemperature": "260.0K",
+    "n_temps": 5,
+    "n_press": 3,
+    "nmpi": 1,
+    "fig1_size": [12,3.5],
+    "fig2_size": [7.2,2.5],
+    "IGNORE": [],
+    "plotRef": [["tip4p/ice","../../ReferenceData/tip4p_ice_liquid_FE.dat", 9.86923],["Exp","../../ReferenceData/exp_pd.dat",9.86923]]
+}

@@ -1,0 +1,128 @@
+# Equilibration of equilibrium ice box
+variable	nsteps_equil_ice    equal	1000000
+
+# Equilibration of liquid
+variable 	nsteps_anneal_up    equal	200000
+variable 	nsteps_melt         equal	1000000
+variable 	nsteps_anneal_down  equal     	2000000
+variable 	nsteps_equil_liquid equal    	600000
+
+
+# Combining liquid and ice
+variable 	nsteps_coex	    equal	100000
+
+
+# Make steps fit with run upto convention
+variable     nsteps_anneal_up_upto	equal (${nsteps_anneal_up}+${nsteps_equil_ice})
+
+variable     nsteps_melt_upto           equal (${nsteps_anneal_up_upto}+${nsteps_melt})
+
+variable     nsteps_anneal_down_upto	equal (${nsteps_melt_upto}+${nsteps_anneal_down})
+
+variable     nsteps_equil_liquid_upto   equal (${nsteps_anneal_down_upto}+${nsteps_equil_liquid})
+
+variable     nsteps_sample_liquid_upto   equal (${nsteps_equil_liquid_upto}+${nsteps_equil_ice})
+
+variable     nsteps_coex_upto           equal (${nsteps_sample_liquid_upto}+${nsteps_coex})
+
+
+# ############################################
+# # Equilibrate and determine average ice box
+
+clear
+units           metal
+atom_style	full
+box tilt large
+read_restart restart.lmp.0
+if " $(step) <= ${nsteps_equil_ice}  " then &
+   "clear" &
+   "log             log.ice" &
+   "include EquilIce.lmp"
+
+# ###########################################
+
+
+
+
+# #########################################################################
+# # Melt ice box and equilibrate to same transversal box size as the ice
+# clear
+# units           metal
+# atom_style	full
+# box tilt large
+# read_restart restart.lmp.0
+# if " $(step) >= ${nsteps_equil_ice} && $(step) < ${nsteps_sample_liquid_upto} " then & 
+#    "clear"&
+#    "log             log.melt"&
+#    "include MeltIce.lmp"
+# ##########################################################################
+
+
+
+
+# # #########################################################################
+# # # Combine ice with Liquid
+# # clear
+# # units           metal
+# # atom_style	full
+# # box tilt large
+# # read_restart restart.lmp.0
+# # if " $(step) < ${nsteps_coex_upto} && $(step) >= ${nsteps_sample_liquid_upto} " then & 
+# #    "clear"&
+# #    "log             log.coex"&
+# #    "include EquilCoex.lmp"
+
+# # if " $(step) >= ${nsteps_coex_upto} " then & 
+# #    "shell echo DONE > DONE" 
+# # ###########################################################################
+ 
+# # Compute best maximum for ice and liquid
+shell cp ../env* .
+shell cp ../plumed.order.dat .
+shell bash SetNumAtoms.sh
+label loop
+variable    i loop 10 #20
+shell echo "$a"
+variable sigma equal (0.04+${i}*0.005)
+shell rm bck.*
+shell python3 SetSigma.py ${sigma} plumed.order.dat
+shell cat plumed.order.dat plumed.hist.dat > plumed_hist.dat
+
+# Histogram for ice
+clear
+units           metal
+atom_style	full
+box tilt large
+read_data liquid_final.data
+reset_timestep  0
+fix             1 all plumed plumedfile plumed_hist.dat outfile plumed.out
+rerun dump_ice.lammpstrj dump x y z 
+unfix 		1		
+#shell plumed driver --plumed  plumed_hist.dat --mf_dcd dump_ice.dcd
+shell mv histo histo_ice_${sigma}
+
+# Histogram for Liquid
+clear
+units           metal
+atom_style	full
+box tilt large
+read_data liquid_final.data
+reset_timestep 0
+fix             1 all plumed plumedfile plumed_hist.dat outfile plumed.out
+rerun dump_liq.lammpstrj dump x y z 
+unfix 		1	
+#shell plumed driver --plumed  plumed_hist.dat --mf_dcd dump_liq.dcd
+shell mv histo histo_liq_${sigma}
+
+ 
+
+shell python3 overlap.py ${sigma} histo_ice_${sigma} histo_liq_${sigma}  >> overlap.txt
+next i
+jump SELF loop
+
+shell python3 SetMaxMin.py
+
+
+if " $(step) == ${nsteps_coex_upto} " then &
+   "shell echo DONE > DONE"
+

@@ -1,0 +1,4 @@
+# vim:ft=plumed
+
+RESTART
+INCLUDE FILE=plumed.start.dat

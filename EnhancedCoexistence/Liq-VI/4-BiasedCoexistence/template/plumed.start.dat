@@ -1,0 +1,12 @@
+# vim:ft=plumed
+
+INCLUDE FILE=plumed.order.dat
+
+# Target uniform distribution of the order parameter between 640 and 720 molecules
+# i.e. between 8 and 9 (half)layers, each of 80 molecules
+umb1: ECV_UMBRELLAS_LINE ARG=refcv.morethan-1 TEMP=REPLACE_TEMP CV_MIN=640.0 CV_MAX=720.0 SIGMA=1 BARRIER=50
+opes: OPES_EXPANDED ARG=umb1.* PACE=2000 STRIDE=1 WALKERS_MPI 
+
+
+
+PRINT STRIDE=500  ARG=* FILE=COLVAR

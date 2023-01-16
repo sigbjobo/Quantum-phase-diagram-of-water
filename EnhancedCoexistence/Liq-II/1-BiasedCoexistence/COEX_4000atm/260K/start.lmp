@@ -1,0 +1,7 @@
+units           metal
+atom_style	full
+box tilt large
+read_data	water.data
+write_restart   restart.lmp.0
+clear 
+include procedure.lmp

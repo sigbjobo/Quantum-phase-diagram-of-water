@@ -1,0 +1,2123 @@
+/home/sbore/projects/DeepMDPhaseDiagram/4-PhaseDiagram/IceIh-Liquid/2-CalculateDistributions
+hopper.pl.ucsd.edu
+Thu May 26 12:43:32 PDT 2022
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
+/home/sbore/projects/DeepMDPhaseDiagram/4-PhaseDiagram/IceIh-Liquid/2-CalculateDistributions
+hopper.pl.ucsd.edu
+Thu May 26 14:30:11 PDT 2022
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12326 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12337 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py:1356: UserWarning: genfromtxt: Empty input file: "IceIh_2000atm_240K//histo"
+  warnings.warn('genfromtxt: Empty input file: "%s"' % fname)
+Traceback (most recent call last):
+  File "script.py", line 5, in <module>
+    print(np.trapz(np.minimum(data1[:,1],data2[:,1]),x=data1[:,0]))
+IndexError: too many indices
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12366 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12374 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12392 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12399 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12418 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12426 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12445 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12452 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12471 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12479 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12499 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12507 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12526 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12533 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12553 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12560 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12579 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12587 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12606 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12613 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12632 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12646 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12666 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12673 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12692 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12699 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12718 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12725 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12744 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12751 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12770 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12777 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12796 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12803 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12825 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12832 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12857 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12864 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12883 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12892 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12911 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12918 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12937 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12946 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12965 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12972 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 12992 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13000 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K//histo not found.
+job.sh: line 37: overlap_2000atm_240K/.dat: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+/home/sbore/projects/DeepMDPhaseDiagram/4-PhaseDiagram/IceIh-Liquid/2-CalculateDistributions
+hopper.pl.ucsd.edu
+Thu May 26 14:31:13 PDT 2022
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13142 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13165 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py:1356: UserWarning: genfromtxt: Empty input file: "IceIh_2000atm_240K/histo"
+  warnings.warn('genfromtxt: Empty input file: "%s"' % fname)
+Traceback (most recent call last):
+  File "script.py", line 4, in <module>
+    data2=np.genfromtxt("Liquid_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: Liquid_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13183 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13191 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13218 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13242 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13260 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13275 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13295 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13304 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13324 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13331 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13351 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13365 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13390 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13417 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13437 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13444 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13471 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13484 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13503 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13510 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13535 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13550 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13570 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13577 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13597 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13604 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13623 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13630 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13649 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13656 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13675 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13682 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13704 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13711 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13730 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13737 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13756 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13766 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13794 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13802 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13829 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13837 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13856 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13863 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13882 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13889 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13908 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumedKernel.so" +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
++++ This error is expected if you are trying to load a kernel <=2.4
++++ Trying /home/sbore/software/lammps_19_05_2022/plumed2-master/src/lib/libplumed.so +++
++++ An error occurred. Message from dlopen(): /data/software/repo/intel/2019.5.281/compilers_and_libraries_2019.5.281/linux/mpi/intel64/lib/libmpifort.so.12: undefined symbol: impi_free +++
+terminate called after throwing an instance of 'PLMD::Plumed::Invalid'
+  what():  You are trying to use plumed, but it is not available.
+Check your PLUMED_KERNEL environment variable.
+job.sh: line 26: 13915 Aborted                 (core dumped) ~/software/miniconda3/envs/deepmd2.1.1/bin/lmp -in start.lmp -screen none
+Traceback (most recent call last):
+  File "script.py", line 3, in <module>
+    data1=np.genfromtxt("IceIh_{}/histo".format(sys.argv[1]))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/npyio.py", line 1317, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rbU'))
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 145, in open
+    return ds.open(path, mode)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/_datasource.py", line 479, in open
+    raise IOError("%s not found." % path)
+IOError: IceIh_2000atm_240K/histo not found.
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+cp: cannot stat ‘histo’: No such file or directory
+cp: cannot stat ‘COLVAR’: No such file or directory
+rm: cannot remove ‘COLVAR’: No such file or directory
+rm: cannot remove ‘*histo*’: No such file or directory
+/home/sbore/projects/DeepMDPhaseDiagram/4-PhaseDiagram/IceIh-Liquid/2-CalculateDistributions
+hopper.pl.ucsd.edu
+Thu May 26 14:32:46 PDT 2022
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/home/sbore/software/miniconda3/envs/deepmd2.1.1/lib/libplumedKernel.so" +++

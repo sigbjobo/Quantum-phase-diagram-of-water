@@ -1,0 +1,13 @@
+LAMMPS (29 Sep 2021 - Update 3)
+  using 20 OpenMP thread(s) per MPI task
+plugin load libdeepmd_lmp.so
+Loading plugin: deepmd pair style v2.0 by Han Wang
+Loading plugin: compute deeptensor/atom v2.0 by Han Wang
+Loading plugin: fix dplr v2.0 by Han Wang
+echo both
+
+units           metal
+atom_style	full
+read_data	water.data
+ERROR: Cannot open file water.data: No such file or directory (src/read_data.cpp:312)
+Last command: read_data	water.data
