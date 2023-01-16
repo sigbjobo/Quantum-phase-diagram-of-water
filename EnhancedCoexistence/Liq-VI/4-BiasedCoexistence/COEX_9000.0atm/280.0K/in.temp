@@ -1,2 +1,0 @@
-variable	temperature equal 280.0
-variable        tempDamp equal 0.100 # this is 0.1 ps

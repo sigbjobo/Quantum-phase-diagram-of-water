@@ -1,6 +1,0 @@
-variable	out_freq equal 1
-variable	out_freq2 equal 1
-
-
-include in.dump_rerun
-

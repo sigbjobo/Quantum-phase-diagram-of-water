@@ -1,9 +1,0 @@
-variable        pressure equal REPLACE_PRESSURE
-variable        pressureDamp equal 1.0 #this is 1ps
-
-variable	barostat string	   REPLACE_BAROSTAT
-variable	direction string   REPLACE_DIRECTION
-variable	direction_x_bool equal REPLACE_X_BOOL
-variable	direction_y_bool equal REPLACE_Y_BOOL
-variable	direction_z_bool equal REPLACE_Z_BOOL
-

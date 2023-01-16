@@ -1,4 +1,0 @@
-# This folder provides files necessary to setup enhanced coexistence simulation.
-
-# Except:
-plumed.order.dat: File containing environment similarity specification.

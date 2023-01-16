@@ -1,2 +1,0 @@
-variable        pressure equal 6079.5
-variable        pressureDamp equal 1.0 #this is 1ps

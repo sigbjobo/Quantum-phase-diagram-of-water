@@ -1,5 +1,0 @@
-# Phase diagram reference data
-exp_pd.dat		       - Experimental line, J. Chem. Phys. 122, 234511 (2005); https://doi.org/10.1063/1.1931662
-tip4p_iceIh+III_liquid_DC.dat  - TIP4P/Ice direct coexistence, Phys. Chem. Chem. Phys., 2019, 21, 5655
-tip4p_iceIh+III_liquid_FE.dat  - TIP4P/Ice free energy calculation, J. Chem. Phys. 122, 234511 (2005); https://doi.org/10.1063/1.1931662
-tip4p_ice_liquid_FE.dat	       - TIP4P/Ice free energy calculation, J. Chem. Phys. 122, 234511 (2005); https://doi.org/10.1063/1.1931662

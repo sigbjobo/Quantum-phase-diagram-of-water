@@ -1,3 +1,0 @@
-dump            myDump all atom ${out_freq2} dump.water.${pid}
-dump_modify     myDump append yes
-
