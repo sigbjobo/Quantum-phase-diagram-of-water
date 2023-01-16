@@ -1,6 +1,10 @@
 ## Quantum-phase-diagram-of-water
+
 ### Sigbjørn L. Bore and Francesco Paesani
+
 ### ChemRxiv preprint (2023) 10.26434/chemrxiv-2023-kmmmz
+
+This repository contains the input files, raw data and analysis scripts needed to reproduce the findings of this paper.
 
 Brief summary of the contents of each folder:
 
