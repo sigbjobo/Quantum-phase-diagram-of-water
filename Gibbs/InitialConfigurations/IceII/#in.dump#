@@ -1,0 +1,11 @@
+	dump            myDump all atom ${out_freq2} dump.water
+dump            myDump2 all dcd ${out_freq2} dump.dcd
+dump_modify     myDump append yes
+dump_modify     myDump2 append yes
+
+
+variable natoms 	equal  "count(all)"                        # NUMBER ATOMS
+variable H      	equal  "enthalpy/v_natoms"                 # ENTHALPY-per-atom
+variable Vol      	equal  "vol/v_natoms"                 # volume-per-atom
+fix AVG all 		ave/time ${out_freq} 1 ${out_freq} v_Vol v_H file vol_enthalpy.dat
+
