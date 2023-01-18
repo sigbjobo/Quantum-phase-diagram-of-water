@@ -1,0 +1,17 @@
+
+
+###############################
+# Dump data into output files #
+###############################
+
+# Dump forces every step
+dump force all custom 500 force_ev.dat id fx fy fz
+dump_modify force sort id append yes
+
+
+# Dump energy every step
+fix             energy all print 500 "$(step) $(pe)" append energy_ev.dat screen no title "#step pe/(ev)"
+
+# Dump box every step
+fix             box all print 500 "$(step) $(lx) 0.0 0.0 $(xy) $(ly) 0.0 $(xz) $(yz) $(lz)" append box.dat screen no title "#step lxx lxy lxz lyx lyz lzx lzy lzz" 
+

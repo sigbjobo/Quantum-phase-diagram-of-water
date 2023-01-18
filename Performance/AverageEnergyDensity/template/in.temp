@@ -1,0 +1,2 @@
+variable	temperature equal REPLACE_TEMPERATURE
+variable	tempDamp equal 0.100

@@ -1,0 +1,6 @@
+dump            myDump all atom ${out_freq2} configurations.lammpstrj
+dump_modify     myDump append yes
+
+
+include in.dump_rerun
+#include in.dump_avg

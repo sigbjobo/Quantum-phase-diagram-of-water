@@ -1,0 +1,9 @@
+
+variable H              equal  "enthalpy"                 # ENTHALPY-per-atom
+variable Vol            equal  "vol"              	  # volume-per-atom
+variable H2              equal  "enthalpy*enthalpy"       # ENTHALPY-per-atom
+variable Vol2            equal  "vol*vol"                 # volume-per-atom
+
+
+fix AVG all             ave/time 500 1 500 v_Vol v_Vol2 v_H v_H2 file vol_enthalpy.dat
+
