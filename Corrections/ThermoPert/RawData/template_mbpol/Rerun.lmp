@@ -1,0 +1,22 @@
+echo both
+units           real
+atom_style      full
+processors * * * map xyz
+
+box tilt large
+read_data	REPLACE_DATA
+include         in.mbpol
+
+thermo 1
+
+
+
+run 0
+include in.dump
+
+
+variable natoms         equal  "count(all)"                        # NUMBER ATOMS
+variable PE              equal  "3*pe/v_natoms"
+fix AVG2 all             ave/time 1 1  ${out_freq} v_PE  file PE.dat
+
+rerun            REPLACE_TRAJ dump  x y z box yes

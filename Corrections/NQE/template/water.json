@@ -1,0 +1,13 @@
+{
+    "verbose":false,
+    "use_unix":true,
+    "port":32345,
+    "host":"h2o-pimd",
+    "graph_file":"../../../../graph.pb",
+    "coord_file":"../water.xyz",
+    "atom_type" : {
+	"O":0, 
+	"H":1,
+	"H":1
+    }
+}

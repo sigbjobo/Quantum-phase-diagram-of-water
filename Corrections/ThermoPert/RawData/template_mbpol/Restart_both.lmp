@@ -1,0 +1,6 @@
+echo both
+variable        pid world 0 1
+variable        phase world IceIh Liquid
+
+shell cd ${phase}
+include Restart.lmp

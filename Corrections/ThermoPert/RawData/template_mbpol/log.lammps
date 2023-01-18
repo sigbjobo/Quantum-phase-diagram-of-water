@@ -1,0 +1,11 @@
+LAMMPS (29 Sep 2021 - Update 3)
+  using 4 OpenMP thread(s) per MPI task
+echo both
+units           real
+atom_style      full
+processors * * * map xyz
+
+box tilt large
+read_data	REPLACE_DATA
+ERROR: Cannot open file REPLACE_DATA: No such file or directory (../read_data.cpp:312)
+Last command: read_data	REPLACE_DATA
